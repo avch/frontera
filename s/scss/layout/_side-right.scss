@@ -1,0 +1,10 @@
+$side-right: 200px;
+
+.content { padding-right: $side-right + 40px; }
+
+.right-sidebar {
+	position: relative;
+	float: left;
+	width: $side-right;
+	margin-left: -$side-right;
+}

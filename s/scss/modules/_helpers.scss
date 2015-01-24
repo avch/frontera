@@ -1,0 +1,10 @@
+.clearfix { @include clearfix; }
+.floatfill { float: left; width: 100%; }
+.hide { display: none; }
+.pull-right {float: right; }
+.pull-left { float: left; }
+.text-center { text-align: center; }
+.text-left { text-align: left; }
+.text-right { text-align: right; }
+.dotted { text-decoration: none; border-bottom: 1px dotted; }
+.dashed { text-decoration: none; border-bottom: 1px dashed; }

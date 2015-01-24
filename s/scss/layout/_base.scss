@@ -1,0 +1,38 @@
+*,
+*:before,
+*:after { -webkit-box-sizing: border-box; -moz-box-sizing: border-box; box-sizing: border-box; }
+
+html, body { width: 100%; height: 100%; }
+
+body {
+	font: 100%/#{$line-height} Arial, Helvetica, sans-serif;
+	color: #000;
+	background: #fff;
+}
+
+.wrapper {
+	min-height: 100%;
+	height: auto !important;
+	height: 100%;
+}
+
+.middle {
+	position: relative;
+	width: 100%;
+	padding: 0 0 $footer-height 0;
+
+	&:after {
+		display: table;
+		clear: both;
+		content: '';
+	}
+}
+
+.container {
+	position: relative;
+	width: 940px;
+	margin: auto;
+	@include clearfix;
+}
+
+.content { min-height: 100px; }

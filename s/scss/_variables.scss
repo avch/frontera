@@ -1,0 +1,46 @@
+$line-height: 1.42857143;
+
+// --- Footer
+// -----------------------------
+
+$footer-height: 100px;
+
+
+// --- Media queries breakpoints
+// -----------------------------
+
+$screen-sm-min: 768px !default;
+$screen-md-min: 992px !default;
+$screen-lg-min: 1200px !default;
+
+$screen-xs-max: ($screen-sm-min - 1) !default;
+$screen-sm-max: ($screen-md-min - 1) !default;
+$screen-md-max: ($screen-lg-min - 1) !default;
+
+
+// --- Forms
+// -----------------------------
+
+$form-control-border-radius: 0;
+$form-control-font-size: 14;
+$form-control-height: 34;
+
+
+// --- Fonts
+// -----------------------------
+
+
+
+// --- Colors
+// -----------------------------
+
+
+
+// --- Prefix
+// -----------------------------
+
+$prefix-for-webkit:    true !default;
+$prefix-for-mozilla:   true !default;
+$prefix-for-microsoft: true !default;
+$prefix-for-opera:     true !default;
+$prefix-for-spec:      true !default; // required for keyframe mixin
