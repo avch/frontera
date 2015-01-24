@@ -3,7 +3,7 @@
 
 /* Compass */
 @import "compass/reset";
-@import "compass/css3/images";
+@import "compass/css3";
 
 /* Utilities */
 @import "functions";
@@ -20,7 +20,7 @@
 /* Modules */
 @import "modules/form"; // forms
 @import "modules/btn"; // buttons
-@import "modules/icons"; // icons
+// @import "modules/icons"; // icons
 @import "modules/nav"; // menu, breadcrumbs, other nav
 @import "modules/format"; // basic typography and format setup
 @import "modules/helpers"; // helper classes

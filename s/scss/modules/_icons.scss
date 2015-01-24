@@ -1,20 +1,8 @@
-@import 'compass/utilities/sprites';
+@import "compass/utilities/sprites";
 
-$sprites: sprite-map('icon/*.png');
+@import "icon/*.png";
 
-[class^='icon-'],
-[class*=' icon-'] {
-	background-repeat: no-repeat;
-	display: inline-block;
-	background-image: sprite-url($sprites);
-}
+@include all-icon-sprites(true);
 
-@mixin sprite-background($name) {
-	background-position: sprite-position($sprites, $name);
-	height: image-height(sprite-file($sprites, $name));
-	width: image-width(sprite-file($sprites, $name));
-}
-
-.icon-phone {
-	//@include sprite-background(phone);
-}
+[class^="icon-"],
+[class*=" icon-"] { @include inline-block; }
