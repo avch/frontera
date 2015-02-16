@@ -1,12 +1,11 @@
 .btn {
 	@include inline-block();
-	font: $form-control-font-size/#{$line-height} Arial;
+	height: 38px;
+	font: 14px/38px Arial;
 	margin: 0;
-	padding: ($form-control-height - $form-control-font-size * $line-height - 2) / 2 + 0px 12px;
+	padding: 0 12px;
 	border: 1px solid transparent;
-	@if $form-control-border-radius != 0 {
-		@include border-radius($form-control-border-radius + 0px);
-	}
+	@include border-radius(4px);
 	text-align: center;
 	text-decoration: none;
 	cursor: pointer;
@@ -37,8 +36,10 @@
 	}
 }
 
-@mixin btn($background, $color) {
-	@extend .btn;
+.btn-default {
+	$color: #555;
+	$background: #fff;
+
 	@include filter-gradient($background, darken($background, 10%)); // IE6-8
 	@include background-image(linear-gradient($background, darken($background, 10%)));
 	color: $color;
@@ -50,10 +51,6 @@
 		background: darken($background, 10%);
 	}
 }
-
-.btn-default { @include btn(#fff, #555); }
-
-.btn-primary { @include btn(#f00, #fff); }
 
 .btn-block { display: block; width: 100%; }
 

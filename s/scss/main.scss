@@ -10,18 +10,16 @@
 @import "mixins";
 @import "variables";
 
-/* Layout */
-@import "layout/base";
-// @import "layout/side-left";
-// @import "layout/side-right";
-@import "layout/header";
-@import "layout/footer";
-
 /* Modules */
 @import "modules/form"; // forms
 @import "modules/btn"; // buttons
-// @import "modules/icons"; // icons
-@import "modules/nav"; // menu, breadcrumbs, other nav
+@import "modules/icons"; // icons
+@import "modules/menu"; // main menu
 @import "modules/format"; // basic typography and format setup
 @import "modules/helpers"; // helper classes
-// @import "modules/grid"; // bootstrap grid for responsive disign
+@import "modules/grid"; // bootstrap grid for responsive disign
+
+/* Layout */
+@import "layout/content";
+@import "layout/header";
+@import "layout/footer";

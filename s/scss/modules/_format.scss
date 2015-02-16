@@ -65,7 +65,9 @@ h1, h2, h3, h4, h5, h6 { margin-bottom: .75em; }
 		}
 	}
 
-	.pull-left { margin: pxtoem(6, 16) pxtoem(20, 16) pxtoem(6, 16) 0; }
+	.pull-left { margin: 4px 20px 10px 0; }
 
-	.pull-right { margin: pxtoem(6, 16) 0 pxtoem(6, 16) pxtoem(20, 16); }
+	.pull-right { margin: 4px 0 10px 20px; }
+
+	.dashed, .dotted { text-decoration: none; }
 }

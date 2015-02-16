@@ -1,0 +1,6 @@
+*, *:before, *:after { @include box-sizing; }
+
+body {
+	font: 100%/#{$line-height} Arial, Helvetica, sans-serif;
+	color: #000;
+}
