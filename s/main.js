@@ -11,12 +11,15 @@ $(document).ready(function(){
 
 function initLayout() {
 	var $window = $(window),
-		$header = $('.header'),
-		$footer = $('.footer'),
 		$content = $('.content');
 
 	$window.on('resize', function() {
-		$content.css('min-height', $window.outerHeight() - $header.outerHeight() - $footer.outerHeight());
+		var h = 0;
+
+		$content.siblings().each(function() { h += $(this).outerHeight(); });
+
+		$content.css('min-height', $window.height() - h);
+
 	}).trigger('resize');
 }
 
