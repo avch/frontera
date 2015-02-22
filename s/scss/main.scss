@@ -11,6 +11,7 @@
 @import "variables";
 
 /* Layout */
+@import "layout/grid"; // bootstrap grid for responsive disign
 @import "layout/content";
 @import "layout/header";
 @import "layout/footer";
@@ -21,4 +22,3 @@
 @import "modules/icons"; // icons
 @import "modules/format"; // basic typography and format setup
 @import "modules/helpers"; // helper classes
-@import "modules/grid"; // bootstrap grid for responsive disign
