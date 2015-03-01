@@ -15,9 +15,29 @@ em { font-style: italic; }
 abbr[title] { border-bottom: 1px dotted; }
 mark { background: #ff0; color: #000; }
 
+
 a { color: inherit; text-decoration: none; }
 a:hover { color: inherit; }
 a:visited { color: inherit; }
+
+.refs a,
+a.ref,
+a .ref {
+	text-decoration: none;
+	color: #0391ba;
+	line-height: $line-height;
+	background-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAADUlEQVR42mNo2XvlPwAG8wMVJr7rMgAAAABJRU5ErkJggg==);
+	background-repeat: repeat-x;
+	background-position: center 1em;
+}
+
+.refs a:hover,
+a.ref:hover,
+a:hover .ref {
+	color: #f00;
+	background-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAADUlEQVR42mP4v2HDfwAIcANfE4fKuAAAAABJRU5ErkJggg==);
+}
+
 
 h1 { font-size: 48px; }
 h2 { font-size: 32px; }
@@ -28,11 +48,8 @@ h6 { font-size: 16px; }
 
 h1, h2, h3, h4, h5, h6 { margin-bottom: .75em; }
 
-.format {
 
-	a { color: #6da3bd; text-decoration: underline; }
-	a:hover { color: #fc0000; }
-	a:visited { color: #909; }
+.format {
 
 	p,
 	form,
