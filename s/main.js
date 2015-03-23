@@ -21,6 +21,10 @@ function initLayout() {
 		$content.css('min-height', $window.height() - h);
 
 	}).trigger('resize');
+
+	if(navigator.platform.indexOf('iPad') != -1) {
+		document.querySelector('meta[name=viewport]').setAttribute('content', 'width=1200');
+	}
 }
 
 function initUtilities() {
