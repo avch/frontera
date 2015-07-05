@@ -57,9 +57,9 @@ input[type="number"]::-webkit-inner-spin-button { height: auto; }
 .form-control {
 	display: block;
 	width: 100%;
-	font: 14px/#{$line-height} Arial;
+	font: 14px/1 Arial;
 	margin: 0;
-	padding: 8.5px 12px;
+	padding: 10px 12px;
 	color: #555;
 	vertical-align: middle;
 	background-color: #fff;
@@ -79,6 +79,11 @@ input[type="number"]::-webkit-inner-spin-button { height: auto; }
 	}
 
 	@include placeholder(#999);
+
+	&:invalid {
+		padding-right: 26px;
+    background: url(data:image/gif;base64,R0lGODlhBwAFAJEAAP8AAP///////wAAACH5BAEAAAIALAAAAAAHAAUAAAIKFGAoqee33Eq0AAA7) no-repeat top 16px right 10px;
+  }
 }
 
 .form-control[disabled],
@@ -88,7 +93,10 @@ fieldset[disabled] .form-control {
 	background-color: #eee;
 }
 
-textarea.form-control { height: auto; }
+textarea.form-control {
+	height: auto;
+	line-height: $line-height;
+}
 
 .form-group { margin-bottom: 15px; }
 
