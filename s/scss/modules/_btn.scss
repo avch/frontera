@@ -1,9 +1,8 @@
 .btn {
 	@include inline-block();
-	height: 38px;
-	font: 14px/38px Arial;
+	font: 14px/1 Arial;
 	margin: 0;
-	padding: 0 12px;
+	padding: 8px 12px;
 	border: 1px solid transparent;
 	@include border-radius(4px);
 	text-align: center;
