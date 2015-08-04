@@ -3,10 +3,11 @@
 
 /*
 @include font-face("", font-files(
-					".eot",
 					".woff2",
 					".woff",
-					".ttf"));
+					".ttf,
+					".svg"),
+					".eot");
 */
 
 $line-height: 1.42857143;
