@@ -33,6 +33,8 @@ function initUtilities() {
 
 	$('.slick').slick();
 
+	$('input[type=tel]').mask('+7 (000) 000-00-00');
+
 	$('.format a[href^=#], a.scrollto[href^=#]').each(function() {
 		var $target = $(this.hash);
 
