@@ -35,7 +35,7 @@ function initUtilities() {
 
 	$('input[type=tel]').mask('+7 (000) 000-00-00');
 
-	$('.format a[href^=#], a.scrollto[href^=#]').each(function() {
+	$('.format a[href^=#]:not(.fancybox), a.scrollto[href^=#]').each(function() {
 		var $target = $(this.hash);
 
 		$(this).on('click', function() {
