@@ -37,6 +37,20 @@ a:hover .uline {
 	background-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAADUlEQVR42mP4v2HDfwAIcANfE4fKuAAAAABJRU5ErkJggg==);
 }
 
+.ulines-white a,
+a.uline-white,
+a .uline-white {
+	color: #fff;
+	background-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAADUlEQVR42mP4v2HDfwAIcANfE4fKuAAAAABJRU5ErkJggg==);
+}
+
+.ulines-white a:hover,
+a.uline-white:hover,
+a:hover .uline-white {
+	color: #ffc;
+	background-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mP4rwYAAicBJhI8TCIAAAAASUVORK5CYII=);
+}
+
 
 h1 { font-size: 48px; }
 h2 { font-size: 32px; }
